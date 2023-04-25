@@ -1,0 +1,36 @@
+.side-bar-main-container {
+  background-color: var(--side-bar-color);
+}
+.new-thread-btn {
+  background-color: var(--primary-button-color);
+  color: #ffffff;
+  transition: 200ms ease-in-out;
+  width: 100%;
+}
+.new-thread-btn:hover {
+  background-color: var(--primary-button-hover-color);
+  color: #ffffff;
+  transform: scale(1.04);
+}
+.new-thread-btn svg path {
+  stroke: #ffffff !important;
+}
+.thread-list-container::-webkit-scrollbar {
+  display: none;
+}
+.thread-btn:hover {
+  background-color: #adadad;
+}
+.logo {
+  font-family: 'Lexend', sans-serif;
+  background: -webkit-linear-gradient(
+    -45deg,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 100%;
+}

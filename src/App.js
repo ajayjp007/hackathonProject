@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Homepage from './pages/Homepage';
 
 function App() {
+  // const { counter } = useAppSelector((state) => state.reduxStore);
+  // const dispatch = useAppDispatch();
+  // const counterChange = (val) => {
+  //   dispatch(incrementCounterAction(val));
+  // };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path={'/'} element={<Homepage />} />
+      <Route path={'/homepage'} element={<Homepage />} exact />
+      <Route path={'*'} element={<p>404 page</p>} />
+    </Routes>
   );
 }
 

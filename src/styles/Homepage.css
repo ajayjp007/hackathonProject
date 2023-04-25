@@ -1,0 +1,71 @@
+.main-input:focus {
+  outline: none;
+}
+.main-input {
+  background-color: transparent;
+  color: var(--text-color);
+}
+.example-cards {
+  transition: 300ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.secondary-text {
+  color: var(--text-color);
+}
+
+.example-cards:hover {
+  transform: scale(1.04);
+  background-color: #f0f0f0;
+}
+.main-chat-container {
+  background-color: var(--lightBodyColor);
+}
+.input-box-outer-container:has(.main-input:focus) {
+  border: 1.5px solid var(--primary-button-color);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.question-container {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.search-btn-main-input {
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: var(--primary-button-color);
+  color: #ffffff;
+}
+.search-btn-main-input:hover {
+  background-color: var(--primary-button-hover-color);
+}
+.thread-name-input:focus {
+  outline: none;
+  border: 1px solid var(--primary-button-color);
+}
+.main-chat-container {
+  animation: showMe 700ms forwards;
+}
+@keyframes showMe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading {
+  animation: shimmer 500ms infinite;
+  background: var(--loading-box);
+  background-size: 1000px 100%;
+}
+
+@keyframes shimmer {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}

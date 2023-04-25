@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Inter', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inter {
+  font-family: 'Inter', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nunito {
+  font-family: 'Nunito Sans', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.secondary-text {
+  color: var(--secondary-text-color);
 }
-
-.App-link {
-  color: #61dafb;
+input[type='checkbox'] {
+  accent-color: #554ef1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-only-btn:hover {
+  color: var(--primary-button-color);
+}
+.svg-icons {
+  stroke: var(--primary-button-color);
+}
+.svg-icons-fill {
+  fill: var(--primary-button-color);
+}
+:root {
+  --text-color: #000000;
+  --secondary-text-color: #575c61;
+  --lightBodyColor: #ffffff;
+  --primary-button-color: #6050dc;
+  --primary-button-hover-color: #614eef;
+  --accent-color: #f8f8f8;
+  --secondary-button-color: #6050dc;
+  --secondary-button-hover-color: #6f5eed;
+  --side-bar-color: #f8f8f8;
+  --main-chat-ui-color: #ffffff;
+  --loading-box: linear-gradient(90deg, #000000, #252525, #323232);
 }
